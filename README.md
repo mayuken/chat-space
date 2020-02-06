@@ -33,11 +33,12 @@ Things you may want to cover:
 ### Association
 - has_many :messages
 - has_many :groups, through:  :users_groups
+- has_many :users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text|
 |image|string|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
@@ -48,10 +49,11 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|group|string|null: false|
 ### Asociation
 - has_many :messages
 - has_many :users, through:  :users_groups
+- has_many :users_groups
 
 ## users_groupsテーブル
 |Column|Type|Options|
