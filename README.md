@@ -49,7 +49,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group|string|null: false|
+|name|string|null: false|
 ### Asociation
 - has_many :messages
 - has_many :users, through:  :users_groups
