@@ -2,14 +2,14 @@
   .side-bar__user-name
     .top-items
       %p.top-items__name
-        SSS
+        = current_user.name
       %ul.top-items__icons
         %li.top-items__icons--new_group
           = link_to "#" do
-            = icon('fas','cog')
-        %li.top-items__icons--edit_user
-          = link_to "#" do
             = icon('fas','edit')
+        %li.top-items__icons--edit_user
+          = link_to edit_user_path(current_user) do
+            = icon('fas','cog')
   .groups
     .group-link
       =link_to "#", class:"group" do
