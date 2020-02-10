@@ -5,23 +5,19 @@
         = current_user.name
       %ul.top-items__icons
         %li.top-items__icons--new_group
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('fas','edit')
         %li.top-items__icons--edit_user
           = link_to edit_user_path(current_user) do
             = icon('fas','cog')
   .groups
     .group-link
-      =link_to "#", class:"group" do
+      - current_user.groups.each do |group|
         .group
-          %p.group-name
-            group_name
-          %p.group__latest--message
-            latest_message
-    .group-link
-      =link_to "#", class:"group" do
-        .group
-          %p.group-name
-            group_name
-          %p.group__latest--message
-            latest_message
+          = link_to '#' do
+            %p.group-name
+              = group.name
+            %p.group__latest--message
+              latest_message
+      
+     
