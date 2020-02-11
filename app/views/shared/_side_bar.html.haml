@@ -14,10 +14,10 @@
     .group-link
       - current_user.groups.each do |group|
         .group
-          = link_to '#' do
+          = link_to group_messages_path(group) do
             %p.group-name
               = group.name
             %p.group__latest--message
-              latest_message
+              = group.show_last_message
       
      

@@ -112,6 +112,9 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 40px;
+    .message__list {
+      margin-bottom: 46px;
+    }
     ul {
       display: flex;
       .user__name {
@@ -127,7 +130,6 @@
     .message {
       color: #434A54;
       font-size: 14px;
-      margin-bottom: 46px;
     }
     }
   &__message--form {
@@ -137,11 +139,12 @@
     display: flex;
     align-items: var(--main-position);
     .form__box {
-      display: flex;
       width: var(--main-width);
       .message__form {
-        width: var(--main-width);
         position: relative;
+        .new_message{
+          display: flex;
+        }
         .form_text {
           height: 50px;
           width: var(--main-width);
@@ -154,7 +157,7 @@
           font-size: 1.3rem;
           position: absolute;
           top: 15px;
-          right: 15px;
+          right: 125px;
           &-file {
             display: none;
           }
@@ -166,6 +169,7 @@
         background-color: #38aef0;
         padding: 0 30px;
         margin-left: 15px;
+        cursor: pointer;
       }
     }
   }
