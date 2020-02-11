@@ -56,3 +56,10 @@ gem 'haml-rails'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'pry-rails'
+gem 'carrierwave'
+gem 'mini_magick'
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
