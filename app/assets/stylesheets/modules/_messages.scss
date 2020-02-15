@@ -117,7 +117,7 @@
     .message__list {
       margin-bottom: 46px;
     }
-    ul {
+    .message__info {
       display: flex;
       .user__name {
         color: #333333;
@@ -129,7 +129,7 @@
         font-size: 12px;
       }
     }
-    .message {
+    .lower-message__content {
       color: #434A54;
       font-size: 14px;
     }
